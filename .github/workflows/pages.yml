@@ -30,7 +30,7 @@ jobs:
       - name: Upload ZIPER website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ziper_website
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
