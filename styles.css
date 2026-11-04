@@ -42,3 +42,12 @@ img{max-width:100%;height:auto}
 .catalog-filters input{width:180px}
 .product-card[hidden]{display:none!important}
 @media(max-width:560px){.catalog-filters{display:grid;grid-template-columns:1fr 1fr}.catalog-filters label,.catalog-filters select,.catalog-filters input{min-width:0;width:100%}}
+
+.audience-section{padding-top:55px;padding-bottom:55px}
+.audience-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.audience-tiles a{min-height:180px;padding:24px;background:#e9e5dc;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .2s}
+.audience-tiles a:hover{transform:translateY(-3px)}
+.audience-tiles span{font-size:9px;color:#947b56;letter-spacing:1px}
+.audience-tiles strong{font:32px "Playfair Display";margin:12px 0 5px}
+.audience-tiles small{font-size:10px;color:#777}
+@media(max-width:600px){.audience-tiles{grid-template-columns:1fr}.audience-tiles a{min-height:130px}}
