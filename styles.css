@@ -34,3 +34,11 @@ img{max-width:100%;height:auto}
 @media(max-width:950px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-image{height:clamp(150px,53vw,245px);aspect-ratio:3/4}.product-meta{display:block}.product-meta .price{margin-top:7px}.product-meta h3{font-size:14px}.product-desc{font-size:10px}.card-actions{align-items:stretch;flex-direction:column}.quick-add-inline{width:100%}.category-tiles{grid-template-columns:1fr}.category-tiles a{height:245px}.detail-layout{grid-template-columns:1fr}.detail-photo{height:clamp(260px,85vw,420px)}.checkout-modal form{grid-template-columns:1fr}.checkout-modal form label{grid-column:1/-1}}
 .contact-page{max-width:1180px;margin:0 auto;padding:70px 7%}.contact-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%;align-items:start}.contact-layout h1{font:500 clamp(42px,6vw,68px)/1.05 "Playfair Display"}.contact-form{display:grid;gap:14px}.contact-form label{display:grid;gap:7px;font-size:11px}.contact-form input,.contact-form textarea,.contact-form select{padding:13px;border:1px solid #d8d1c5;background:white;width:100%}.contact-form button{justify-self:start}.admin-page{max-width:1300px;margin:0 auto;padding:55px 6%}.admin-page h1{font:500 clamp(38px,5vw,60px) "Playfair Display"}.demo-note{line-height:1.7}
+
+/* Audience collection filters */
+.catalog-filters{display:flex;flex-wrap:wrap;align-items:end;gap:12px;padding:16px 0 20px;border-bottom:1px solid #e5e1d9;margin-bottom:22px}
+.catalog-filters label{display:grid;gap:6px;font-size:10px;color:#666;min-width:135px}
+.catalog-filters select,.catalog-filters input{padding:10px 12px;border:1px solid #ded9cf;background:#fff;font-size:11px;min-width:135px}
+.catalog-filters input{width:180px}
+.product-card[hidden]{display:none!important}
+@media(max-width:560px){.catalog-filters{display:grid;grid-template-columns:1fr 1fr}.catalog-filters label,.catalog-filters select,.catalog-filters input{min-width:0;width:100%}}
